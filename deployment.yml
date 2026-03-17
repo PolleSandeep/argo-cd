@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: cont1
-          image: shaikmustafa/paytm:bank
+          image: sandeep181/mytetrisgame:v1
           ports:
             - containerPort: 80
