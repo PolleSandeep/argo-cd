@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flm-green
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: swiggy
+      version: green
+  template:
+    metadata:
+      labels:
+        app: swiggy
+        version: green
+    spec:
+      containers:
+      - name: cont1
+        image: sandeep181/tetrisgame:v2
+        ports:
+        - containerPort: 3000
